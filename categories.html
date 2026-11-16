@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations – Wanderlust</title>
+<meta name="description" content="Villes, plages et montagnes : explorez les destinations Wanderlust avec prix indicatifs et meilleure période.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Outfit:wght@400;500;600&display=swap"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<div class="page-top"><div class="wrap"><h1>Catégories de voyage</h1><p>Filtrez par type de voyage ou cherchez une destination.</p></div></div>
+<section><div class="wrap">
+<form class="search" id="search" role="search" style="border:2px solid var(--sea);margin-bottom:24px"><label for="q" style="position:absolute;left:-9999px">Rechercher</label><input id="q" type="search" placeholder="Rechercher une destination"><button class="btn" type="submit">Rechercher</button></form>
+<div class="chips" role="group" aria-label="Catégories">
+<button class="chip on" data-cat="Toutes">Toutes</button><button class="chip" data-cat="Villes">Villes</button><button class="chip" data-cat="Plages">Plages</button><button class="chip" data-cat="Montagne">Montagne</button><button class="chip" data-cat="Luxe">Luxe</button></div>
+<div class="grid" id="dest-grid" aria-live="polite"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="script.js"></script>
+</body>
+</html>

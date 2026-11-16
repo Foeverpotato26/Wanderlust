@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réservation de vol – Wanderlust</title>
+<meta name="description" content="Remplissez votre demande de vol Wanderlust (démonstration).">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Outfit:wght@400;500;600&display=swap"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<div class="page-top"><div class="wrap"><h1>Réservation de vol</h1><p>Veuillez remplir les informations suivantes.</p></div></div>
+<section><div class="wrap">
+<div id="confirm"></div>
+<p class="demo"><b>Mode démonstration :</b> ce formulaire ne réserve aucun vol et ne prend aucun paiement.</p>
+<form id="booking" action="#" method="post" novalidate>
+<fieldset><legend>1. Informations personnelles</legend>
+<div class="f"><label for="nom">Nom</label><input type="text" id="nom" name="nom" required><span class="err" id="e_nom"></span></div><div class="f"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" required><span class="err" id="e_prenom"></span></div><div class="f"><label for="email">Adresse e-mail</label><input type="email" id="email" name="email" required><span class="err" id="e_email"></span></div><div class="f"><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" required><span class="err" id="e_telephone"></span></div><div class="f"><label for="adresse">Adresse personnelle</label><input type="text" id="adresse" name="adresse" required><span class="err" id="e_adresse"></span></div><div class="f"><label for="ville">Ville</label><input type="text" id="ville" name="ville" required><span class="err" id="e_ville"></span></div><div class="f"><label for="pays">Pays</label><input type="text" id="pays" name="pays" required><span class="err" id="e_pays"></span></div>
+</fieldset>
+<fieldset><legend>2. Informations sur le vol</legend>
+<div class="f"><label for="depart">Ville de départ</label><select id="depart" name="depart" required><option value="">-- Choisir une ville --</option><option>Tunis</option><option>Paris</option><option>Londres</option><option>Rome</option><option>Istanbul</option><option>Dubai</option></select><span class="err" id="e_depart"></span></div>
+<div class="f"><label for="pays_depart">Pays de départ</label><input id="pays_depart" readonly></div>
+<div class="f"><label for="arrivee">Ville d’arrivée</label><select id="arrivee" name="arrivee" required><option value="">-- Choisir une ville --</option><option>Tunis</option><option>Paris</option><option>Londres</option><option>Rome</option><option>Istanbul</option><option>Dubai</option></select><span class="err" id="e_arrivee"></span></div>
+<div class="f"><label for="pays_arrivee">Pays d’arrivée</label><input id="pays_arrivee" readonly></div>
+<div class="f"><label for="compagnie">Compagnie aérienne</label><select id="compagnie" name="compagnie" required><option value="">-- Choisir --</option><option>Tunisair</option><option>Nouvelair</option><option>Air France</option><option>Turkish Airlines</option><option>Emirates</option></select><span class="err" id="e_compagnie"></span></div>
+<div class="f"><span>Type de vol</span><div class="inline"><label><input type="radio" id="aller" name="type_vol" value="Aller simple" required checked> Aller simple</label><label><input type="radio" id="aller_retour" name="type_vol" value="Aller-retour"> Aller-retour</label></div></div>
+<div class="f"><label for="date_depart">Date de départ</label><input type="date" id="date_depart" name="date_depart" required><span class="err" id="e_date_depart"></span></div><div class="f"><label for="date_retour">Date de retour</label><input type="date" id="date_retour" name="date_retour" ><span class="err" id="e_date_retour"></span></div>
+<div class="f"><label for="classe">Classe</label><select id="classe" name="classe" required><option value="">-- Choisir --</option><option value="Économique">Économique</option><option value="Affaires">Affaires</option><option value="Première classe">Première classe</option></select><span class="err" id="e_classe"></span></div>
+<div class="f"><label for="passagers">Nombre de passagers</label><input type="number" id="passagers" name="passagers" min="1" max="10" value="1" required><span class="err" id="e_passagers"></span></div>
+</fieldset>
+<fieldset><legend>3. Informations complémentaires</legend>
+<div class="f"><label for="bagages">Nombre de bagages</label><select id="bagages" name="bagages"><option value="0">Aucun</option><option value="1">1 bagage</option><option value="2">2 bagages</option><option value="3+">3 bagages ou plus</option></select><span class="err" id="e_bagages"></span></div>
+<div class="f full"><label for="demandes">Demandes particulières</label><textarea id="demandes" name="demandes" rows="4" placeholder="Repas spécial, assistance…"></textarea></div>
+<div class="f full"><p class="demo">Information : un bagage en cabine est généralement inclus ; les franchises en soute varient selon la compagnie et la classe.</p><label><input type="checkbox" id="conditions" name="conditions" required> J’accepte les conditions de réservation.</label></div>
+</fieldset>
+<button class="btn" type="submit">Envoyer ma demande</button> <button class="btn o" type="reset">Effacer le formulaire</button>
+</form>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="script.js"></script>
+</body>
+</html>
