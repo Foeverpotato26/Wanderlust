@@ -4,7 +4,7 @@
 
 > ⚠️ **Demonstration project.** No real flight is booked and no payment is taken. The form validates your input and shows a summary only. A real booking system would need an airline API and a payment service.
 
-🔗 **Live demo:** `https://Foeverpotato26.github.io/wanderlust/` 
+🔗 **Live demo:** `https://foeverpotato26.github.io/Wanderlust/` 
 
 ## Features
 
